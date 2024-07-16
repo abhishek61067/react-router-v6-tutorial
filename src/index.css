@@ -380,3 +380,27 @@ i {
   justify-content: center;
   width: 100%;
 }
+
+.relative {
+  position: relative;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  right: 0;
+}
+.flex {
+  display: flex;
+}
+
+.active-scroll-spy {
+  color: brown;
+}
+
+.w-300 {
+  width: 300px;
+}
+
+.h-300 {
+  height: 300px;
+}
