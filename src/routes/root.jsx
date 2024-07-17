@@ -70,6 +70,10 @@ export default function Root() {
         <nav>
           {contacts.length ? (
             <ul>
+              <li>
+                <Link to={"docs"}>Docs</Link>
+              </li>
+              <hr />
               {contacts.map((contact) => (
                 <li key={contact.id}>
                   <NavLink
