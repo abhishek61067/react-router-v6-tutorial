@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import { getContacts, createContact } from "../contacts";
 import { useEffect } from "react";
+import { ScrollRestoration } from "react-router-dom";
 
 export async function action() {
   const contact = await createContact();
@@ -107,6 +108,11 @@ export default function Root() {
       >
         <Outlet />
       </div>
+      <ScrollRestoration
+        getKey={(location) => {
+          return location.pathname;
+        }}
+      />
     </>
   );
 }
